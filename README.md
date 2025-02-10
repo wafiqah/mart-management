@@ -1,2 +1,3 @@
 # mart-management
-Laravel Project with vue and connnect to Mysql #growth1
+Laravel Project with vue and connnecting to Mysql DB 
+#growth1
