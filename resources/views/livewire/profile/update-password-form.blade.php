@@ -40,6 +40,12 @@ new class extends Component
 
 <section>
     <header>
+        <div class="flex items-center gap-4">
+            <x-action-message class="me-3" on="password-updated">
+                {{ __('Saved.') }}
+            </x-action-message>
+        </div>
+
         <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">
             {{ __('Update Password') }}
         </h2>
@@ -70,10 +76,6 @@ new class extends Component
 
         <div class="flex items-center gap-4">
             <x-primary-button>{{ __('Save') }}</x-primary-button>
-
-            <x-action-message class="me-3" on="password-updated">
-                {{ __('Saved.') }}
-            </x-action-message>
         </div>
     </form>
 </section>

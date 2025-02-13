@@ -64,6 +64,13 @@ new class extends Component
 }; ?>
 
 <section>
+
+    <div class="flex items-center gap-4">            
+        <x-action-message class="me-38" on="profile-updated">
+            {{ __('Profile updated.') }}
+        </x-action-message>
+    </div>    
+
     <header>
         <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">
             {{ __('Profile Information') }}
@@ -106,11 +113,8 @@ new class extends Component
         </div>
 
         <div class="flex items-center gap-4">
-            <x-primary-button>{{ __('Save') }}</x-primary-button>
-
-            <x-action-message class="me-3" on="profile-updated">
-                {{ __('Saved.') }}
-            </x-action-message>
+            <x-primary-button>{{ __('Update') }}</x-primary-button>
         </div>
+
     </form>
 </section>
