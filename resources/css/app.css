@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .success-message-box{
+        @apply bg-green-800 text-gray-50 text-sm;
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    .success-message-box{
+        @apply bg-green-300 text-gray-400 text-sm;
+    }
+}
