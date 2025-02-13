@@ -6,10 +6,25 @@
     .success-message-box{
         @apply bg-green-800 text-gray-50 text-sm;
     }
+    .text-title{
+        @apply p-6 text-gray-900 hover:text-indigo-600 text-lg font-medium;
+    }
+    .text-sub-title{
+        @apply p-6 text-gray-900 hover:text-indigo-600 text-sm cursor-pointer;
+    }
+    .dashboard-section{
+        @apply pt-5 pb-0
+    }
 }
 
 @media (prefers-color-scheme: dark){
     .success-message-box{
         @apply bg-green-300 text-gray-400 text-sm;
+    }
+    .text-title{
+        @apply p-6 dark:text-gray-100 hover:text-indigo-300 text-lg font-medium;
+    }
+    .text-sub-title{
+        @apply p-6 dark:text-gray-100 hover:text-indigo-300 text-sm;
     }
 }

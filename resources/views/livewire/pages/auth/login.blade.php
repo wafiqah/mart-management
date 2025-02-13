@@ -21,7 +21,10 @@ new #[Layout('layouts.guest')] class extends Component
 
         Session::regenerate();
 
+        Session::flash('message', __("You're logged in!"));
+        
         $this->redirectIntended(default: RouteServiceProvider::HOME, navigate: true);
+
     }
 }; ?>
 
